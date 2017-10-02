@@ -18,7 +18,7 @@ import java.util.concurrent.TimeUnit;
 
 public class MainActivity extends AppCompatActivity {
     private Button alarmBt, cancelAlarmBt, jobscheduleBt;
-    private static final int JOB_ID = 1 ;
+    public static final int JOB_ID = 1 ;
     
     @Override
     protected void onCreate(Bundle savedInstanceState) {
