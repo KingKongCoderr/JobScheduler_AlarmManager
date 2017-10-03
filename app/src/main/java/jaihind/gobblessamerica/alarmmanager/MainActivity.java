@@ -11,6 +11,7 @@ import android.os.SystemClock;
 import android.provider.Settings;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
@@ -58,6 +59,7 @@ public class MainActivity extends AppCompatActivity {
                 jb_builder.setRequiresCharging(true)
                         .setExtras(pb).setPeriodic(polling_interval);
                 jb.schedule(jb_builder.build());
+                Log.d("list", jb.getAllPendingJobs()+"");
             }
         });
     }
